@@ -23,14 +23,14 @@ public class StringReverse {
 		}
 		else
 		{
-			String[] arr = input.split("");
-			
-			for(String item: arr)
+			for(int i= input.length()-1; i>=0; i--)
 			{
-				reverse = item + reverse;
+				reverse = reverse + input.charAt(i);
 			}
+			
 		}
 		
 		return reverse;
 	}
 }
+
